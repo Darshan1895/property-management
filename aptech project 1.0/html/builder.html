@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <title>Builder</title>
+    <head>
+        <meta charset="utf-8">
+          <script src="../javascript/script.js"> </script>
+        <link rel="stylesheet" href="font-awsome/font-awesome.css">
+        <link rel="stylesheet" href="font-awsome/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <script src="../js/dist/scrollreveal.min.js"></script>
+        <script src="../js/dist/scrollreveal.js"></script>
+        <script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="builder.html">Builders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li onclick="opensign()"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li onclick="openlog()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+<script>
+//code for sign in and log in pop up
+//log and sign in pop up
+
+
+function opensign(){
+     var a= document.getElementById("box");
+     a.style.display="block";
+   }
+   function closesign(){
+     var b= document.getElementById("box");
+     b.style.display="none";
+   }
+function openlog(){
+     var a= document.getElementById("box1");
+     a.style.display="block";
+   }
+   function closelog(){
+     var b= document.getElementById("box1");
+     b.style.display="none";
+   }
+
+function openlog_in(){
+var b=document.getElementById("box1");
+var c=document.getElementById("box");
+b.style.display="block";
+c.style.display="none";
+}
+function opensign_in(){
+var b=document.getElementById("box1");
+var c=document.getElementById("box");
+b.style.display="none";
+c.style.display="block";
+}
+
+
+function closebox(){
+var b=document.getElementById("box");
+var c=document.getElementById("box1");
+b.style.display="none";
+c.style.display="none";
+}
+
+</script>
+<section>
+  <div id="box">
+<div class="box-body">
+  <i class="fa fa-times-circle-o close"  aria-hidden="true" onclick="closebox()"></i>
+<h1><i class="fa fa-user-circle" aria-hidden="true"></i>
+REGISTER  HERE</h1>
+<form>
+  <input type="text"placeholder="Name"><br>
+<input type="number" placeholder="Coctact number"><br>
+<input type="email" placeholder="E-mail"><br>
+<input type="password" placeholder="Password"><br>
+<input type="password" placeholder="Confirm password"><br>
+   <button onclick="opensign_in()"class="button3">sign in</button>
+ <button onclick="openlog_in()"class="button4">log in</button>
+</form>
+</div>
+  </div>
+
+  <div id="box1">
+<div class="box-body1">
+  <i class="fa fa-times-circle-o close" aria-hidden="true" onclick="closebox()"></i>
+<h1><i class="fa fa-user-circle" aria-hidden="true"></i>Log In</h1>
+<form>
+<input type="email" placeholder="Log-In"><br>
+<input type="password" placeholder="Password"><br>
+   <button onclick="opensign_in()"class="button3">sign in</button>
+ <button onclick="openlog_in()"class="button4">log in</button>
+</form>
+</div>
+  </div>
+
+  <div class="container">
+  <div class="property">
+    <h3>Trending Builders</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 1</h3>
+          </div>
+          <div class="panel-body">
+            <div class="property-box">
+            <img  src="../images/1.jpg" class="img-responsive property-images"  style="width:100%;">
+            </div>
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 2</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img  src="../images/1.jpg" class="img-responsive property-images" style="width:100%;">
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 3</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img src="../images/1.jpg"class="img-responsive property-images"  style="width:100%;">
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="property">
+
+<div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 4</h3>
+          </div>
+          <div class="panel-body">
+            <div class="property-box">
+            <img  src="../images/1.jpg" class="img-responsive property-images"  style="width:100%;">
+            </div>
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>
+          </div>
+        </div>
+
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 5</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img  src="../images/1.jpg" class="img-responsive property-images" style="width:100%;">
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 6</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img src="../images/1.jpg"class="img-responsive property-images"  style="width:100%;">
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="property">
+
+<div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 7</h3>
+          </div>
+          <div class="panel-body">
+            <div class="property-box">
+            <img  src="../images/1.jpg" class="img-responsive property-images"  style="width:100%;">
+            </div>
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 8</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img  src="../images/1.jpg" class="img-responsive property-images" style="width:100%;">
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Builder 9</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img src="../images/1.jpg"class="img-responsive property-images"  style="width:100%;">
+            </div>
+            <p>  Completed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <b>15</b></p>
+            <p>Ongoing  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>1</b></p>
+          </div>
+        </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+    <p>  <a href="#">  <i class="fa fa-facebook-official" aria-hidden="true">FaceBook</i></a></p>
+    <p>    <a href="#">  <i class="fa fa-youtube-play" aria-hidden="true">YouTube</i></a></p>
+    <p>    <a href="#">  <i class="fa fa-twitter" aria-hidden="true">Twitter</i></a></p>
+      <p>  <a href="#"> <i class="fa fa-google-plus" aria-hidden="true">Google+</i></a></p>
+      <p>    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true">Pinterest</i></a></p>
+      </div>
+      <div class="col-md-4">
+    <p>  <a href="#">  <i class="fa fa-facebook-official" aria-hidden="true">FaceBook</i></a></p>
+    <p>    <a href="#">  <i class="fa fa-youtube-play" aria-hidden="true">YouTube</i></a></p>
+    <p>    <a href="#">  <i class="fa fa-twitter" aria-hidden="true">Twitter</i></a></p>
+      <p>  <a href="#"> <i class="fa fa-google-plus" aria-hidden="true">Google+</i></a></p>
+      <p>    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true">Pinterest</i></a></p>
+      </div>
+      <div class="col-md-4">
+    <p>  <a href="#">  <i class="fa fa-facebook-official" aria-hidden="true">FaceBook</i></a></p>
+    <p>    <a href="#">  <i class="fa fa-youtube-play" aria-hidden="true">YouTube</i></a></p>
+    <p>    <a href="#">  <i class="fa fa-twitter" aria-hidden="true">Twitter</i></a></p>
+      <p>  <a href="#"> <i class="fa fa-google-plus" aria-hidden="true">Google+</i></a></p>
+      <p>    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true">Pinterest</i></a></p>
+    </div>
+  </div>
+  </div>
+  
+</footer>
+<script>
+window.sr = ScrollReveal();
+  sr.reveal('.property', {
+    duration: 2000,
+     scale:0.3,
+     origin:'left',
+    distance: '300px'
+  }, 200);
+    sr.reveal('li', {
+      duration: 600,
+      scale: 0.3,
+      distance: '0px'
+    }, 200);
+    sr.reveal('.images',{
+      duration:2000,
+      scale:0.3,
+      origin:'top',
+      distance:'300px',
+    });
+    sr.reveal('.img-gallery',{
+      duration:2000,
+      scale:0.3,
+      origin:'top',
+      distance:'300px',
+    });
+    sr.reveal('.Blog', {
+      duration: 2000,
+      scale:0.3,
+      distance: '400px'
+    }, 200);
+    sr.reveal('.builder', {
+      duration: 2000,
+       scale:0.3,
+       origin:'right',
+       distance: '400px'
+    }, 200);
+    sr.reveal('.footer', {
+      duration: 2000,
+      origin:'bottom',
+      distance: '200px'
+    }, 200);
+
+</script>
+
+
+
+          </body>
+</html>

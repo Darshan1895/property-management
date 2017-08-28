@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <title>Blog</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="font-awsome/font-awesome.css">
+        <link rel="stylesheet" href="font-awsome/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <script src="../js/dist/scrollreveal.min.js"></script>
+        <script src="../js/dist/scrollreveal.js"></script>
+        <script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin-top: 10px;
+}
+
+footer h3{
+    border-left: 2px solid red;
+    padding: 8px;
+}
+
+footer{
+    background-color: #343a40;
+    color: white;
+}
+
+li{
+    text-decoration: none;
+}
+        </style>
+
+    </head>
+    <body>
+      <script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="builder">Builders</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li onclick="opensign()"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li onclick="openlog()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+<section>
+
+</section>
+
+<script>
+
+//code for sign in and log in pop up
+
+
+
+
+
+function opensign(){
+     var a= document.getElementById("box");
+     a.style.display="block";
+   }
+   function closesign(){
+     var b= document.getElementById("box");
+     b.style.display="none";
+   }
+function openlog(){
+     var a= document.getElementById("box1");
+     a.style.display="block";
+   }
+   function closelog(){
+     var b= document.getElementById("box1");
+     b.style.display="none";
+   }
+
+function openlog_in(){
+var b=document.getElementById("box1");
+var c=document.getElementById("box");
+b.style.display="block";
+c.style.display="none";
+}
+function opensign_in(){
+var b=document.getElementById("box1");
+var c=document.getElementById("box");
+b.style.display="none";
+c.style.display="block";
+}
+
+
+function closebox(){
+var b=document.getElementById("box");
+var c=document.getElementById("box1");
+b.style.display="none";
+c.style.display="none";
+}
+
+
+</script>
+
+
+<section>
+  <div id="box">
+<div class="box-body">
+  <i class="fa fa-times-circle-o close"  aria-hidden="true" onclick="closebox()"></i>
+<h1><i class="fa fa-user-circle" aria-hidden="true"></i>
+REGISTER  HERE</h1>
+<form>
+  <input type="text"placeholder="Name"><br>
+<input type="number" placeholder="Coctact number"><br>
+<input type="email" placeholder="E-mail"><br>
+<input type="password" placeholder="Password"><br>
+<input type="password" placeholder="Confirm password"><br>
+   <button onclick="opensign_in()"class="button3">sign in</button>
+ <button onclick="openlog_in()"class="button4">log in</button>
+</form>
+</div>
+  </div>
+
+  <div id="box1">
+<div class="box-body1">
+  <i class="fa fa-times-circle-o close" aria-hidden="true" onclick="closebox()"></i>
+<h1><i class="fa fa-user-circle" aria-hidden="true"></i>Log In</h1>
+<form>
+<input type="email" placeholder="Log-In"><br>
+<input type="password" placeholder="Password"><br>
+   <button onclick="opensign_in()"class="button3">sign in</button>
+ <button onclick="openlog_in()"class="button4">log in</button>
+</form>
+</div>
+  </div>
+</section>
+<section>
+  <div class="container">
+  <div class="property">
+    <h3 style="text-align: center; font-size: 50px;">Blog</h3><br>
+    <div class="row">
+        <div class="col-md-8">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Name</h3>
+          </div>
+          <div class="panel-body">
+            <div class="property-box">
+            <img  src="../images/unknown_person.jpg" class="img-responsive property-images img-circle"  style="width:50%; margin-left:75px;">
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit repudiandae earum nesciunt deserunt, magni voluptatum quibusdam dignissimos voluptatibus consequatur, saepe iusto tempora similique. Similique ad temporibus, optio quisquam voluptate...<span class="read">Continue Reading</span></p>
+          </div>
+        </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3>Name</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img  src="../images/unknown_person.jpg" class="img-responsive property-images img-circle" style="width:50%; margin-left:75px;">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit repudiandae earum nesciunt deserunt, magni voluptatum quibusdam dignissimos voluptatibus consequatur, saepe iusto tempora similique. Similique ad temporibus, optio quisquam voluptate...<span class="read">Continue Reading</span></p>
+          </div>
+        </div>
+        </div>
+
+            <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Name</h3>
+          </div>
+          <div class="panel-body">
+            <div class="property-box">
+            <img  src="../images/unknown_person.jpg" class="img-responsive property-images img-circle"  style="width:50%; margin-left:75px;">
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit repudiandae earum nesciunt deserunt, magni voluptatum quibusdam dignissimos voluptatibus consequatur, saepe iusto tempora similique. Similique ad temporibus, optio quisquam voluptate...<span class="read">Continue Reading</span></p>
+          </div>
+        </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3>Name</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img  src="../images/unknown_person.jpg" class="img-responsive property-images img-circle" style="width:50%; margin-left:75px;">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit repudiandae earum nesciunt deserunt, magni voluptatum quibusdam dignissimos voluptatibus consequatur, saepe iusto tempora similique. Similique ad temporibus, optio quisquam voluptate...<span class="read">Continue Reading</span></p>
+          </div>
+        </div>
+        </div>
+
+            <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Darshan Nagwekar</h3>
+          </div>
+          <div class="panel-body">
+            <div class="property-box">
+            <img  src="../images/unknown_person.jpg" class="img-responsive property-images img-circle"  style="width:50%; margin-left:75px;">
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit repudiandae earum nesciunt deserunt, magni voluptatum quibusdam dignissimos voluptatibus consequatur, saepe iusto tempora similique. Similique ad temporibus, optio quisquam voluptate...<span class="read">Continue Reading</span></p>
+          </div>
+        </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3>Zaeem</h3>
+          </div>
+          <div class="panel-body">
+              <div class="property-box">
+            <img  src="../images/unknown_person.jpg" class="img-responsive property-images img-circle" style="width:50%; margin-left:75px;">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit repudiandae earum nesciunt deserunt, magni voluptatum quibusdam dignissimos voluptatibus consequatur, saepe iusto tempora similique. Similique ad temporibus, optio quisquam voluptate...<span class="read">Continue Reading</span></p>
+          </div>
+        </div>
+        </div>
+        </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        <h3 style="text-align: center;"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</h3>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                    <div class="panel panel-body">
+                        <p><img src="../web-bootstrap/parallax1.jpg" class="img-responsive" width="100" align="left" hspace="5px" vspace="5px"/>Comments                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab reprehenderit officiis quis tenetur, soluta commodi vero blanditiis sint voluptatem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <footer class="footer">
+            <div class="container">
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Address</h3>
+                    <p><b>Address:</b><br>
+                            abcd flat, abcd bldg,<br>
+                            abcd city, abcd state,<br>
+                            Pincode:-
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Helpline</h3>
+                    <div>
+                        <p><b>Email id:</b>abc@gmail.com</p>
+                        <p><b>Helpline Numbers:</b><br>
+                            +91 1234567890<br>
+                            +91 1234567890
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</section>
+<script>
+window.sr = ScrollReveal();
+  sr.reveal('.property', {
+    duration: 2000,
+     scale:0.3,
+     origin:'left',
+    distance: '300px'
+  }, 200);
+    sr.reveal('li', {
+      duration: 600,
+      scale: 0.3,
+      distance: '0px'
+    }, 200);
+    sr.reveal('.images',{
+      duration:2000,
+      scale:0.3,
+      origin:'top',
+      distance:'300px',
+    });
+    sr.reveal('.img-gallery',{
+      duration:2000,
+      scale:0.3,
+      origin:'top',
+      distance:'300px',
+    });
+    sr.reveal('.Blog', {
+      duration: 2000,
+      scale:0.3,
+      distance: '400px'
+    }, 200);
+    sr.reveal('.builder', {
+      duration: 2000,
+       scale:0.3,
+       origin:'right',
+       distance: '400px'
+    }, 200);
+    sr.reveal('.footer', {
+      duration: 2000,
+      origin:'bottom',
+      distance: '200px'
+    }, 200);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: red;
+}
+.box2{
+  width: 50px;
+  height: 50px;
+  margin:10px;
+  background-color: red;
+}
+.container{
+  overflow: hidden;
+}
+.images{
+  width:100%;
+  height:400px;
+  margin-top: -20px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+.panelex{
+  margin-top: 20px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+    #box{
+      background-color: black;
+      position: fixed;
+      top:0;
+      left: 0;
+      right:0;
+      bottom:0;
+      background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.6);
+display: none;
+      z-index: 1;
+
+    }
+    .box-body{
+      background-color: white;
+      width: 450px;
+      height: 550px;
+      position: relative;
+      top: 75px;
+      left: 400px;
+border-radius:10px;
+z-index: 2;
+background-color: black;
+background-color: rgba(0,0,0,0.6);
+animation-name: pageroll;
+animation-duration: 1s;
+    }
+ #box1{
+      background-color: black;
+      position: fixed;
+      top:0;
+      left: 0;
+      right:0;
+      bottom:0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.6);
+      display: none;
+      z-index: 1;
+    }
+    .box-body1{
+      background-color: black;
+      width: 450px;
+      height: 550px;
+      position: relative;
+      top: 75px;
+      left: 400px;
+       border-radius:10px;
+       background-color: rgba(0,0,0,0.6);
+       animation-name: pageroll;
+       animation-duration: 1s;
+       z-index: 3;
+    }
+
+  /*  @keyframes pageroll{
+      from{
+        transform: translateY(-100px);
+
+        opacity: 0;
+        transform: rotateY(0deg);
+      }
+      to{
+        transform: translateY(0px);
+          opacity: 1;
+          transform: rotateY(360deg);
+      }
+    }
+*/
+/*@keyframes pageroll{
+    0%{
+      opacity: 0;
+      transform: rotateY(0deg);
+    }
+    25%{
+      opacity: 0.3;
+      transform: rotateY(90deg);
+    }
+    50%{
+      opacity: 0.6;
+      transform: rotateY(180deg);
+
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+  }*/
+  @keyframes pageroll{
+     from{
+       opacity: 0;
+       transform: rotateX(360deg);
+     }
+     to{
+         opacity: 1;
+         transform: rotateX(0deg);
+     }
+   }
+
+input{
+height:35px;
+width:200px;
+display:block;
+margin-right: 50px;
+transition:width 1s;
+border: 3px solid #e5293f;
+border-radius: 20px;
+background-color: rgba(0,0,0,0.6);
+padding-left: 20px;
+}
+input:focus{
+width:350px;
+}
+
+ h1{
+text-align:center;
+font-family:verdana;
+font-weight:100;
+padding-top:55px;
+color: white;
+background-color: #e5293f;
+}
+i:hover{
+  color: green;
+}
+
+.button3{
+height: 30px;
+  width: 150px;
+  background: #e5293f;
+  border: 1px solid white;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  float: left;
+clear:both;
+  overflow: hidden;
+  z-index: 3;
+transition:all .5s;
+display:inline;
+margin-left:50px;
+margin-top:50px;
+}
+
+.button3:hover{
+background-color:black;
+}
+.button4{
+height: 30px;
+  width: 150px;
+  background: #e5293f;
+  border: 1px solid white;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+margin-top:50px;
+clear:both;
+  overflow: hidden;
+  z-index: 3;
+transition:all .5s;
+display:inline;
+}
+
+.button4:hover{
+background-color:black;
+}
+.row{
+margin-top: 50px;
+}
+.property-box{
+  width:100%;
+  overflow: hidden;
+}
+.property-images{
+  width:100%;
+  transition: transform 500ms;
+}
+.property-images:hover{
+  transform: scale(1.2);
+}
+.property p {
+  padding: 20px;
+}
+.property h4 {
+  padding: 20px;
+}
+.builder p {
+  padding: 20px;
+}
+.builder h4 {
+  padding: 20px;
+}
+
+.Blog p {
+  padding: 20px;
+}
+.Blog h4 {
+  padding: 20px;
+}
+
+.read{
+  color:blue;
+  cursor: pointer;
+}
+.img-gal{
+  width:100%;
+  overflow: hidden;
+}
+.img-scale{
+  transition: all 1s;
+}
+.img-scale:hover{
+cursor:pointer;
+transform:translateX(100px);
+filter: grayscale(100%);
+}
+footer h3{
+    border-left: 2px solid red;
+    padding: 8px;
+}
+
+footer{
+    background-color: #343a40;
+    color: white;
+    overflow: hidden;
+}
+
+footer ul li{
+    text-decoration: none;
+}
