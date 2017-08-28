@@ -81,20 +81,18 @@ animation-duration: 1s;
        z-index: 3;
     }
 
-  /*  @keyframes pageroll{
+    @keyframes pageroll{
       from{
         transform: translateY(-100px);
 
         opacity: 0;
-        transform: rotateY(0deg);
       }
       to{
         transform: translateY(0px);
           opacity: 1;
-          transform: rotateY(360deg);
       }
     }
-*/
+
 /*@keyframes pageroll{
     0%{
       opacity: 0;
@@ -114,6 +112,7 @@ animation-duration: 1s;
         transform: rotateY(360deg);
     }
   }*/
+/*
   @keyframes pageroll{
      from{
        opacity: 0;
@@ -124,20 +123,22 @@ animation-duration: 1s;
          transform: rotateX(0deg);
      }
    }
-
+*/
 input{
 height:35px;
 width:200px;
 display:block;
 margin-right: 50px;
 transition:width 1s;
-border: 3px solid #e5293f;
+border: 3px solid #3b5998;
 border-radius: 20px;
 background-color: rgba(0,0,0,0.6);
 padding-left: 20px;
+color: white;
 }
 input:focus{
 width:350px;
+    color: white;
 }
 
  h1{
@@ -145,17 +146,18 @@ text-align:center;
 font-family:verdana;
 font-weight:100;
 padding-top:55px;
-color: white;
-background-color: #e5293f;
+background-color: #3b5998;
+padding-bottom: 30px; 
 }
+
 i:hover{
-  color: green;
+  color: black;
 }
 
 .button3{
 height: 30px;
   width: 150px;
-  background: #e5293f;
+  background: #3b5998;
   border: 1px solid white;
   color: white;
   font-size: 12px;
@@ -176,7 +178,7 @@ background-color:black;
 .button4{
 height: 30px;
   width: 150px;
-  background: #e5293f;
+  background: #3b5998;
   border: 1px solid white;
   color: white;
   font-size: 12px;
@@ -250,9 +252,10 @@ footer h3{
 footer{
     background-color: #343a40;
     color: white;
-    overflow: hidden;
+
 }
 
 footer ul li{
     text-decoration: none;
 }
+
