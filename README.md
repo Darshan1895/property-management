@@ -1,2 +1,2 @@
-# web-ptoject
-web project html css javascript bootsrap
+# web-project
+web project html css javascript bootsrap 
