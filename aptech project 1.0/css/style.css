@@ -4,12 +4,6 @@ body{
     font-size: 20px;
     background-color: red;
 }
-.box2{
-  width: 50px;
-  height: 50px;
-  margin:10px;
-  background-color: red;
-}
 .container{
   overflow: hidden;
 }
@@ -19,6 +13,13 @@ body{
   margin-top: -20px;
   overflow: hidden;
   z-index: 0;
+}
+
+.box2{
+  width: 50px;
+  height: 50px;
+  margin:10px;
+  background-color: red;
 }
 
 
@@ -80,7 +81,7 @@ animation-duration: 1s;
        animation-duration: 1s;
        z-index: 3;
     }
-
+/*animation of login and signin page*/
     @keyframes pageroll{
       from{
         transform: translateY(-100px);
@@ -147,7 +148,7 @@ font-family:verdana;
 font-weight:100;
 padding-top:55px;
 background-color: #3b5998;
-padding-bottom: 30px; 
+padding-bottom: 30px;
 }
 
 i:hover{
@@ -258,4 +259,3 @@ footer{
 footer ul li{
     text-decoration: none;
 }
-
