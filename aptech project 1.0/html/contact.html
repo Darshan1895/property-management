@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        
+        <link rel="stylesheet" href="font-awsome/font-awesome.css">
+        <link rel="stylesheet" href="font-awsome/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <script src="../js/dist/scrollreveal.min.js"></script>
+        <script src="../js/dist/scrollreveal.js"></script>
+        <script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <style>
+            input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid gray;
+                border-radius: 4px;
+                background-color: white;
+            }
+            
+            textarea {
+                width: 430px;
+                height: 150px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid gray;
+                border-radius: 4px;
+                background-color: white;
+                padding: 12px 20px;
+            }
+            
+            button {
+                padding: 10px;
+                border-style: none;
+                border-radius: 5px;
+                background-color: #3b5998;
+                
+            }
+            
+            button:hover{
+                background-color: grey;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="builder.html" class="nav-link">Builders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a  href="contact.html" class="nav-link">Contact US</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li onclick="opensign()"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li onclick="openlog()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            function opensign(){
+     var a= document.getElementById("box");
+     a.style.display="block";
+   }
+   function closesign(){
+     var b= document.getElementById("box");
+     b.style.display="none";
+   }
+function openlog(){
+     var a= document.getElementById("box1");
+     a.style.display="block";
+   }
+   function closelog(){
+     var b= document.getElementById("box1");
+     b.style.display="none";
+   }
+function openlog_in(){
+var b=document.getElementById("box1");
+var c=document.getElementById("box");
+b.style.display="block";
+c.style.display="none";
+}
+function opensign_in(){
+var b=document.getElementById("box1");
+var c=document.getElementById("box");
+b.style.display="none";
+c.style.display="block";
+}
+function closebox(){
+var b=document.getElementById("box");
+var c=document.getElementById("box1");
+b.style.display="none";
+c.style.display="none";
+}
+
+</script>
+
+        <div class="container" style="margin-bottom: 70px;">
+            <h1 style="background-color: white; font-size: 50px;" class="head">Contact Us!</h1><br><br><br>
+            <div class="col-md-5" id="info">
+                <div style="padding-bottom: 100px; text-align: center;">
+                    <p style="font-size: 20px;"><b>Abcd Homes</b></p><br><br><br><br>
+                    <p>Mumbai Office</p>
+                    <p>abcd flat, abcd bldg,<br>
+                       abcd city, abcd state,<br>
+                       Pincode:-</p>
+                    <p>Mobile:- 1234567890</p>
+                    <p>Tel:- 022-21234567</p>
+                    <p>Email id:- abcd@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-5" style="text-align: center;">
+                <p style="font-size: 20px;"><b>Enquiry</b></p><br>
+                <div style="display: block; text-align: center;">
+                <form>
+                    <input type="text" id="form" placeholder="Name"><br>
+                    <input type="email" id="form" placeholder="Email"><br>
+                    <input type="tel" id="form" placeholder="Telephone/Mobile"><br>
+                    <textarea id="form" placeholder="Your Message"></textarea><br><br>
+                    <button id="form">Submit Query!</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Address</h3>
+                    <p><b>Address:</b><br>
+                            abcd flat, abcd bldg,<br>
+                            abcd city, abcd state,<br>
+                            Pincode:-
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Helpline</h3>
+                    <div>
+                        <p><b>Email id:</b>abc@gmail.com</p>
+                        <p><b>Helpline Numbers:</b><br>
+                            +91 1234567890<br>
+                            +91 1234567890
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+        window.sr = ScrollReveal();
+            sr.reveal('.head', {
+            duration: 2000,
+
+             origin:'left',
+            distance: '300px'
+          }, 200);
+            sr.reveal('#info',{
+              duration:2000,
+              scale:0.3,
+              origin:'top',
+              distance:'300px',
+            });
+            sr.reveal('#form',{
+              duration:600,
+              scale:0.3,
+              origin:'left',
+              distance:'0px',
+            }, 300);
+          sr.reveal('.property', {
+            duration: 2000,
+
+             origin:'left',
+            distance: '300px'
+          }, 200);
+            sr.reveal('li', {
+              duration: 600,
+              scale: 0.3,
+              distance: '0px'
+            }, 200);
+            sr.reveal('.images',{
+              duration:2000,
+              scale:0.3,
+              origin:'top',
+              distance:'300px',
+            });
+            sr.reveal('.img-gallery',{
+              duration:2000,
+              scale:0.3,
+              origin:'top',
+              distance:'300px',
+            });
+            sr.reveal('.Blog', {
+              duration: 2000,
+              scale:0.3,
+              distance: '400px'
+            }, 200);
+            sr.reveal('.builder', {
+              duration: 2000,
+               scale:0.3,
+               origin:'right',
+               distance: '400px'
+            }, 200);
+            sr.reveal('.footer', {
+              duration: 2000,
+              origin:'bottom',
+              distance: '200px'
+            }, 200);
+
+        </script>
+    </body>
+</html>
